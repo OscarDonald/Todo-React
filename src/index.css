@@ -1,0 +1,287 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: rgba(49, 49, 49, 0.87);
+  background-image: url(../images/background-image.jpg);
+  background-size: cover;
+  background-position: center;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* -----------
+    Header
+-------------*/
+.header {
+  width: 100%;
+  height: 35px;
+  text-align: center;
+  border-radius: .5rem;
+}
+
+.header-h1{
+  margin-left: 15px;
+  font-size: 35px;
+  margin-top: 15px;
+}
+
+
+/* -----------
+  MainContent
+-------------*/
+.main__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* -----------
+     Column
+-------------*/
+.card__column {
+  margin: 50px;
+  height: 80vh;
+  min-width: 15vw;
+  background-color: #c5c5c580;
+  backdrop-filter: blur(2px);
+  border-radius: 1rem;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+.card__column h2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  margin-top: 8px;
+  text-align: center;
+  text-decoration: none;
+}
+.card__column h2 svg {
+  cursor: pointer;
+  color: rgba(49, 49, 49, 0.87);
+}
+.task {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
+  height: 50px;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin: 7px;
+  padding: 5px;
+}
+.task-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+  width: 90%;
+  margin: 0 auto;
+}
+.task__arrow {
+  display: flex;
+}
+.task__title h2{
+  font-size: 17px;
+  padding: 0px;
+  margin: 0px;
+}
+.task__date{
+  font-size: 11px;
+  padding: 0px;
+  margin: 0px;
+  color: rgba(0, 0, 0, 0.637);
+}
+
+
+/* -----------
+  OpenModal
+-------------*/
+.createTask {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.taskButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  margin-top: 7px;
+  width: 90%;
+  height: 50px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.taskModal {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  width: 40vw;
+  height: 40vh;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2rem;
+  padding: 10px;
+  color: black;
+  box-shadow: 5px 5px 15px;
+}
+.taskModal-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+}
+.taskModal-content-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.taskModal-content input {
+  border: none;
+  width: 200px;
+  font-size: 18px;
+  border: 1px solid;
+}
+.taskModal-textarea{
+  height: 70px;
+  width: 300px;
+  resize: none;
+  font-size: 16px;
+  border: 1px solid;
+}
+
+.taskModal-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  
+}
+.taskModal-button button{
+  margin: 8px;
+  width: 120px;
+  height: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: .5rem;
+}
+
+
+/* -----------
+  EditModal
+-------------*/
+.taskData__content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 35px;
+}
+.taskData__cross {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.taskData__todo {
+  width: max-content;
+  background-color: lightblue;
+  padding: 0px 6px;
+  border-radius: .5rem;
+}
+.taskData__inProgress{
+  width: max-content;
+  background-color: rgb(175, 236, 175);
+  padding: 0px 6px;
+  border-radius: .5rem;
+}
+.taskData__done{
+  width: max-content;
+  background-color: rgb(243, 197, 204);
+  padding: 0px 6px;
+  border-radius: .5rem;
+}
+.editModal__button {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.editModal__button button {
+  margin: 8px;
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: .5rem;
+}
+
+
+/* -----------
+ EditTaskModal
+-------------*/
+.modal__overlay {
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: none;
+}
+.editTaskModal__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.editTaskModal__content__form {
+  display: flex;
+  flex-direction: column;
+  
+}
+.taskModal__input, .taskModal__textarea{
+  margin: 10px;
+}
+
+.editTaskModal__button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.editTaskModal__button button{
+  margin: 8px;
+  width: 120px;
+  height: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: .5rem;
+}
+
+
+/* -----------
+     FOOTER
+-------------*/
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  
+}
+
