@@ -1,9 +1,13 @@
-# React + Vite
+Välkommen till min Todo-List!
+Här kan du hålla reda på dina uppgifter och mål för att bli mer produktiv och organiserad.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Vad är en Todo-List?
+En Todo-List är ett enkelt och effektivt verktyg för att organisera dina uppgifter och mål. Genom att skriva ner det du behöver göra kan du hålla koll på vad som är viktigt och följa upp dina framsteg.
 
-Currently, two official plugins are available:
+Fördelar med Att Använda en Todo-List:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# Todo-React
+1. Ökar produktiviteten genom att hålla dig fokuserad på dina mål.
+2. Hjälper dig att inte glömma bort viktiga uppgifter.
+3. Gör det lättare att prioritera och planera din tid.
+
+Kom igång idag och börja använda min Todo-List för att effektivisera din vardag!
